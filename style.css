@@ -1,0 +1,37 @@
+:root {
+    --app-font-sans: 'Inter', sans-serif;
+    --app-font-serif: Georgia, serif;
+    --app-font-mono: Menlo, monospace;
+
+    --bg: #090909;
+    --text: #ffffff;
+    --muted: #9f9f9f;
+    --accent: #8b5cf6;
+}
+
+body {
+    font-family: var(--app-font-sans);
+    background: var(--bg);
+    color: var(--text);
+}
+
+.logo {
+    font-family: var(--app-font-sans);
+    font-weight: 900;
+}
+
+.hero h1 {
+    font-family: var(--app-font-sans);
+    font-weight: 900;
+}
+
+.hero p {
+    font-family: var(--app-font-sans);
+    color: var(--muted);
+}
+
+footer {
+    font-family: var(--app-font-mono);
+    color: var(--accent);
+    letter-spacing: 8px;
+}
