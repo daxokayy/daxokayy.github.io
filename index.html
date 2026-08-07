@@ -1,9 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DW | Purchase Daxware Today!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAXWARE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Inter,sans-serif;
+    background:#090909;
+    color:white;
+    overflow:hidden;
+}
+
+/* Background Glow */
+
+body::before{
+    content:"";
+    position:absolute;
+    width:900px;
+    height:900px;
+    background:radial-gradient(circle,#6d28ff30 0%,transparent 70%);
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top,#ffffff05,transparent 45%),
+    linear-gradient(#0d0d0d,#080808);
+    z-index:-2;
+}
+
+/* Navbar */
+
+nav{
+    height:70px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    padding:0 50px;
+    border-bottom:1px solid rgba(255,255,255,.06);
+    backdrop-filter:blur(20px);
+}
+
+.logo{
+    font-size:34px;
+    font-weight:900;
+    color:white;
+    letter-spacing:2px;
+
+    text-shadow:
+    0 0 10px #7b4dff,
+    0 0 20px #7b4dff,
+    0 0 40px #7b4dff;
+}
+
+/* Center */
+
+.hero{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-55%);
+    text-align:center;
+    width:90%;
+}
+
+.hero h1{
+    font-size:120px;
+    font-weight:900;
+    letter-spacing:10px;
+    line-height:1;
+
+    text-shadow:
+    0 0 15px rgba(255,255,255,.15),
+    0 0 35px rgba(123,77,255,.35);
+}
+
+.hero p{
+    margin-top:30px;
+    color:#9f9f9f;
+    font-size:22px;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.7;
+}
+
+/* Bottom */
+
+footer{
+    position:absolute;
+    bottom:45px;
+    width:100%;
+    text-align:center;
+    color:#8b5cf6;
+    font-weight:700;
+    letter-spacing:8px;
+    font-size:18px;
+
+    text-shadow:
+    0 0 8px rgba(139,92,246,.6);
+}
+</style>
+
 </head>
 <body>
-    <h1>Hello World!</h1>
+
+<nav>
+    <div class="logo">DW</div>
+</nav>
+
+<section class="hero">
+    <h1>DAXWARE</h1>
+
+    <p>
+        Powerful tools built with precision, performance, and simplicity in mind.
+        DAXWARE delivers a clean experience with modern design and uncompromising functionality.
+    </p>
+</section>
+
+<footer>
+    COMING SOON...
+</footer>
+
 </body>
 </html>
