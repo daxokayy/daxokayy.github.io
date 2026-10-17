@@ -1,37 +1,18 @@
-:root {
-    --app-font-sans: 'Inter', sans-serif;
-    --app-font-serif: Georgia, serif;
-    --app-font-mono: Menlo, monospace;
-
-    --bg: #090909;
-    --text: #ffffff;
-    --muted: #9f9f9f;
-    --accent: #8b5cf6;
-}
-
-body {
-    font-family: var(--app-font-sans);
-    background: var(--bg);
-    color: var(--text);
-}
-
-.logo {
-    font-family: var(--app-font-sans);
-    font-weight: 900;
-}
-
-.hero h1 {
-    font-family: var(--app-font-sans);
-    font-weight: 900;
-}
-
-.hero p {
-    font-family: var(--app-font-sans);
-    color: var(--muted);
-}
-
-footer {
-    font-family: var(--app-font-mono);
-    color: var(--accent);
-    letter-spacing: 8px;
-}
+:root{color-scheme:dark;font-family:Consolas,"Courier New",monospace;background:#090909;color:#eee}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;display:flex;flex-direction:column;background-image:linear-gradient(#ffffff06 1px,transparent 1px),linear-gradient(90deg,#ffffff06 1px,transparent 1px);background-size:50px 50px}
+main{flex:1;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:70px 20px 50px}
+.mark{font-size:120px;line-height:1;position:relative;filter:drop-shadow(0 0 30px #ffffff18);transform:rotate(15deg)}
+.mark span{position:absolute;font-size:35px;right:-14px;bottom:8px}
+h1{font-size:11px;letter-spacing:7px;font-weight:400;color:#999;margin:26px 0 38px;padding-left:7px}
+.script-panel{width:min(100%,650px);background:#101010ed;border:1px solid #222;padding:24px}
+code{display:block;font-size:13px;line-height:1.8;text-align:center;overflow-wrap:anywhere;user-select:all;color:#ddd}
+button,.discord{font:inherit;font-size:11px;letter-spacing:2px;color:#aaa;background:transparent;border:1px solid #292929;text-decoration:none;transition:background .15s,color .15s,border-color .15s}
+button{display:block;width:100%;min-height:44px;margin-top:17px;cursor:pointer}
+button:hover,.discord:hover{background:#1c1c1c;border-color:#555;color:#fff}
+button:focus-visible,.discord:focus-visible{outline:2px solid #eee;outline-offset:5px}
+#status{font-size:11px;line-height:1.6;text-align:center;margin:0;color:#aaa}
+#status:not(:empty){margin-top:12px}
+.discord{padding:10px 14px;margin-top:20px}
+footer{text-align:center;font-size:10px;letter-spacing:3px;color:#777;padding:24px 20px}
+@media(max-width:480px){.script-panel{padding:20px 15px}code{font-size:12px}.mark{font-size:96px}}
